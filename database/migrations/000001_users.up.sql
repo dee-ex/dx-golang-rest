@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS users (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    date_created DATETIME NOT NULL DEFAULT NOW(),
+    token VARCHAR(2048) NOT NULL DEFAULT ''
+);
