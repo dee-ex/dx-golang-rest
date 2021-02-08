@@ -20,9 +20,10 @@ for opt, arg in opts:
     elif opt in ("-p", "--project"):
         project = arg
 
-path_replacement = "some_username/some_project"
-database_replacement = "some_project"
+path_replacement = "dee-ex/dx-golang-rest"
+database_replacement = "dx-golang-rest"
 
+print("Prepare your setup...")
 for dname, dirs, files in os.walk(os.getcwd()):
     if ".git" in dname:
         continue
@@ -34,5 +35,8 @@ for dname, dirs, files in os.walk(os.getcwd()):
         s = s.replace(database_replacement, project)
         with open(fpath, "w") as f:
             f.write(s)
+
+print("Init your setup...")
+os.system("go mod init github.com/" + username + "/" + project)
 
 print("Setup Successfully!")
