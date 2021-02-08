@@ -1,4 +1,4 @@
-# Golang Restful API Setup
+# Golang RESTful API Setup
 [![goversion](https://img.shields.io/badge/Go-v1.14.4-blue)](https://golang.org/)
 [![pythonversion](https://img.shields.io/badge/Python-v3.9-blue)](https://python.org/)
 [![mysqlversion](https://img.shields.io/badge/MySQL-v8.0.22-blue)](https://mysql.com/)
@@ -19,9 +19,9 @@
 * [License](#license)
 ## Installation
 ### What Is My Setup?
-My Setup is a simple setup for you to create you Restful API in Golang.
+My Setup is a simple setup for you to create you RESTful API in Golang.
 ### Why Should You Use My Setup?
-Have you found yourself crazy in building your setup to create your Restful API time after time?  
+Have you found yourself crazy in building your setup to create your RESTful API time after time?  
 If you have, the solution of mine is the thing I see that you really need.  
 It doesn't have too much abstraction, which lets you feel free to develop your own API.
 ### Getting Started
