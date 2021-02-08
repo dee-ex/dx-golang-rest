@@ -36,7 +36,4 @@ for dname, dirs, files in os.walk(os.getcwd()):
         with open(fpath, "w") as f:
             f.write(s)
 
-print("Init your setup...")
-os.system("go mod init github.com/" + username + "/" + project)
-
 print("Setup Successfully!")
