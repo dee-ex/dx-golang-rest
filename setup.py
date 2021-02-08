@@ -20,6 +20,11 @@ for opt, arg in opts:
     elif opt in ("-p", "--project"):
         project = arg
 
+if len(username)*len(project) == 0:
+    print("Missing <your_username> and <your_project_name>")
+    print("setup.py -u[--username] <your_username> -p[--project] <your_project_name>")
+    sys.exit(2)
+
 path_replacement = "dee-ex/dx-golang-rest"
 database_replacement = "dx-golang-rest"
 
