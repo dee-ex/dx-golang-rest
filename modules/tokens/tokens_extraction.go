@@ -3,19 +3,19 @@ package tokens
 import (
     "fmt"
     
-	"github.com/dgrijalva/jwt-go"
+    "github.com/dgrijalva/jwt-go"
 )
 
-func ExtractUsernameFromClaims(token *jwt.Token) (string, error) {
+func ExtractValueFromClaims(token *jwt.Token, key string) (interface{}, error) {
     claims, ok := token.Claims.(jwt.MapClaims)
     if !ok {
-        return "", fmt.Errorf("Cannot extract `username` from token")
+        return "", fmt.Errorf("Cannot extract `%s` from token", key)
     }
 
-    username, ok := claims["username"].(string)
+    value, ok := claims[key]
     if !ok {
-        return "", fmt.Errorf("Cannot extract username from token")
+        return "", fmt.Errorf("Cannot extract `%s` from token", key)
     }
 
-    return username, nil
+    return value, nil
 }

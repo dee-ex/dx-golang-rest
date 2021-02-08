@@ -1,18 +1,18 @@
 package users
 
 import (
-	"github.com/dee-ex/dx-golang-rest/infrastructures/mysql"
+    "github.com/dee-ex/dx-golang-rest/infrastructures/mysql"
 )
 
 func NewService(repo Repository) *Service {
-	return &Service{repo: repo}
+    return &Service{repo: repo}
 }
 
 func NewMySQLRepository() (*MySQL, error) {
-	db, err := mysql.ConstructMySQLSession()
-	if err != nil {
-		return nil, err
-	}
+    db, err := mysql.ConstructMySQLSession()
+    if err != nil {
+        return nil, err
+    }
 
-	return &MySQL{db: db}, nil
+    return &MySQL{db: db}, nil
 }

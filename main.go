@@ -22,7 +22,7 @@ func ServeHTTP() {
     auth_r := r.PathPrefix("").Subrouter()
     auth_r.Use(middlewares.AuthMiddleware)
 
-    auth_r.HandleFunc("/me", users.TestHandler)
+    auth_r.HandleFunc("/me", users.ProfileHandler)
     auth_r.HandleFunc("/logout", users.LogoutHandler).Methods("GET")
 
     c := cors.New(cors.Options{

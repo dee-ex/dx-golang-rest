@@ -5,11 +5,11 @@ import (
 )
 
 type (
-	User struct {
-    	ID int
-    	Username string
-    	Password string
-    	DateCreated *time.Time
-    	Token string
-	}
+    User struct {
+        ID int
+        Username string
+        Password string
+        DateCreated *time.Time
+        Token string
+    }
 )
