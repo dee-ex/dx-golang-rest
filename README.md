@@ -19,13 +19,13 @@
 * [License](#license)
 ## Installation
 ### What Is My Setup?
-My Setup is a simple setup for you to create you RESTful API in Golang.
+My Setup is a simple setup for you to create your RESTful API in Golang.
 ### Why Should You Use My Setup?
 Have you found yourself crazy in building your setup to create your RESTful API time after time?  
 If you have, the solution of mine is the thing I see that you really need.  
 It doesn't have too much abstraction, which lets you feel free to develop your own API.
 ### Getting Started
-No matter you're developing on macOS, Windows or Linux, you can just clone/download this project and use a simple terminal command to create your project base on my Setup.
+No matter you're developing on macOS, Windows or Linux, you can just clone/download this project and use a simple terminal command to create your project based on my Setup.
 ```
 python setup.py -u username -p project_name
 ```
